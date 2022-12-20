@@ -4,7 +4,7 @@ import css from "./ContactList.module.css";
 export const ContactList = ({ contacts, handleDelete }) => {
     return (
         <div className={css.contactContainer}>
-            <ul className={css.contactsList}>
+            <ul className={css.contactList}>
                 {contacts.map((contact, id) => (
                   <li key={id} className={css.contactsItem}>
                     {contact.name}: {contact.number}
